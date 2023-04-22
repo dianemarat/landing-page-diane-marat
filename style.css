@@ -1,0 +1,193 @@
+/* Write some CSS below */
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: #73543E;
+  font-size: 16px;
+  font-family: 'Raleway';
+}
+
+h1,h2,h3 {
+  font-family: 'Lato';
+}
+
+h1 {
+  color: white;
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner {
+  background-image: url('images/banniere.png');
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.banner p {
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  opacity: 0.7;
+}
+
+.btn-marron {
+  background-color: #73543E;
+  color: white;
+  border-radius: 10px;
+  padding: 20px 50px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.btn-marron:hover {
+  background-color: black;
+}
+
+.container {
+  width: 900px;
+  margin: 20px auto;
+}
+
+.cards-white {
+  background-color: white;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 8px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cards-white img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
+#logo1 {
+  width: 80px;
+}
+
+#logo2 {
+  height: 50px;
+  object-fit: cover;
+}
+
+.cards-inline {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+
+.cards-brown {
+  background-image: url('images/mode.gif');
+  background-position: center;
+  background-size: cover;
+  background-color: #73543E;
+  color: white;
+  text-align: center;
+  padding: 120px 0;
+  font-family: Raleway;
+}
+
+.footer {
+  background-color: #38383A;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer p {
+  font-size: 17px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.footer-inline {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 13px;
+  font-size: 17px;
+  font-family: 'Raleway';
+
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.list-inline li {
+  display: inline;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.list-inline i {
+  font-size: 27px;
+  color: white;
+  letter-spacing: 20px;
+  text-align: center;
+}
+
+#paiment {
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+@media (max-width:960px) {
+  .container {
+    width: 900px;
+  }
+
+  .cards-inline {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width:720px) {
+  .container {
+    width: 680px;
+  }
+
+  .cards-inline {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width:540px) {
+  .container {
+    width: 480px;
+  }
+
+  .cards-inline {
+    grid-template-columns: 1fr;
+  }
+}
